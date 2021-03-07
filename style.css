@@ -1,0 +1,297 @@
+:root {
+  --primary: brown;
+  --content: rgb(230, 228, 228);
+  --body: rgb(32, 32, 32);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+body {
+  background-color: var(--body);
+}
+
+/* Header Section */
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 70px;
+  padding: 20px;
+}
+
+.navbar-logo a {
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+.navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar-menu ul, li::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: var(--primary);
+  transition: 0.4s;
+}
+
+.navbar-menu ul, li:hover::after {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.navbar ul, li {
+  display: flex;
+  margin: 5px;
+  position: relative;
+  font-size: 18px;
+  list-style: none;
+}
+
+a {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+/* Main Section */
+
+.flip {
+  transition: 1s;
+  transform: rotateY(180deg);
+}
+
+.main-body {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+  background-color: var(--content);
+}
+
+.header-content {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: brown;
+}
+
+.header-content img {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+.header-content .intro{
+  margin: 10px;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.conteudo-aqui {
+  width: 100%;
+  height: auto;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.pokeball {
+  height: 50px;
+}
+
+.pokeball .line {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body);
+}
+
+.pokeball .main-dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: var(--body);
+}
+
+.pokeball .dot {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+.header-conteudo {
+  padding: 2px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: var(--body);
+}
+
+.header-conteudo h1{
+  text-align: center;
+  color: whitesmoke;
+}
+
+.main-conteudo{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-conteudo img{
+  margin: 10px;
+  min-width: 100px;
+  max-width: 200px;
+  border-radius: 10px;
+  background: var(--body);
+}
+
+.main-conteudo .texto{
+  margin: 15px;
+  font-weight: bold;
+}
+
+/* Imagens do Card */
+
+.img-poke{
+  height: 190px;
+}
+
+.img-backcard{
+  height: 65px;
+}
+
+.footer-conteudo{
+  display:flex;
+  justify-content: center;
+}
+
+.footer-conteudo img{
+  margin: 30px;
+  min-width: 300px;
+  max-width: 700px;
+  max-height: 350px;
+}
+/* tutorial */
+
+#cardBoard{
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 720px;
+  margin: auto;
+  
+}
+
+.memory-card{
+  width: 25%;
+  height: 33%;
+  margin: 5px;
+  transform-style: preserve-3d;
+  position: relative;
+
+}
+
+.memory-card:active{
+  transform: scale(0.97);
+}
+
+.memory-card.flip{
+  transform: rotateY(180deg);
+}
+
+.front-card, .back-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 20px;
+  border-radius: 12px;
+  background: var(--body);
+}
+
+.front-card{
+  transform: rotateY(180deg);
+}
+
+.front-card {
+  transform: translateZ(0px);
+}
+
+/*.cards {
+  width: 200px;
+  height: 300px;
+  margin: 5px;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+ .front-cards, .back-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  transform-style: preserve-3d;
+  background-color: rgb(37, 37, 37);
+}
+
+.front-cards {
+  transform: translateZ(0px);
+}
+
+.back-cards{
+  transform: rotateY(180deg);
+}
+
+.front-cards, .back-cards .header {
+  text-align: center;
+  color: whitesmoke;
+} */
+
+/* Footer Section */
+
+.main-footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 15px;
+  height: 30px;
+}
+
+.main-footer p {
+  color: whitesmoke;
+}
+
+.main-footer span {
+  color: var(--primary);
+}
