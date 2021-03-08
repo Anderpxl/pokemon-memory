@@ -201,16 +201,19 @@ a {
 #cardBoard{
   display: flex;
   flex-wrap: wrap;
-  width: 800px;
-  height: 720px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
   margin: auto;
-  
+  padding: 10px;
 }
 
 .memory-card{
-  width: 25%;
-  height: 33%;
+  height: 200px;
+  width: 200px;
   margin: 5px;
+  transition: 0.5s;
   transform-style: preserve-3d;
   position: relative;
 
@@ -278,6 +281,18 @@ a {
   text-align: center;
   color: whitesmoke;
 } */
+
+/* Botões Dificuldade */
+
+.dificuldade{
+  margin: 50px;
+}
+
+.btn{
+  padding: 5px;
+  margin-left: 10px;
+  position: relative;
+}
 
 /* Footer Section */
 
