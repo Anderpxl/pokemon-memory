@@ -1,11 +1,3 @@
-/* let cards = document.querySelectorAll('.cards');
-
-for(card of cards){
-  card.addEventListener('click', function(){
-    this.classList.toggle('flip')
-  })
-} */
-
 const cardBoard = document.querySelector("#cardBoard");
 const images = [
   'abra.png',
@@ -64,7 +56,9 @@ images.forEach(img => {
   cardHTML += `
     <div class="memory-card" data-card="${img}">
       <img class="front-card" src="img/${img}">
-      <img class="back-card" src="img/logo-card.png">
+      <div class="back-card">
+      <img class="img-backcard" src="img/logo-card.png">
+      </div>
     </div>
   `
 });

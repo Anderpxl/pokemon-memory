@@ -28,72 +28,40 @@ body {
   padding: 20px;
 }
 
-.navbar-logo a {
-  font-size: 30px;
-  transition: 0.4s;
-}
-
-.navbar-logo span {
-  color: var(--primary);
-}
-
-.navbar-menu ul, li::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  height: 2px;
-  width: 0%;
-  background-color: var(--primary);
-  transition: 0.4s;
-}
-
-.navbar-menu ul, li:hover::after {
-  width: 100%;
-  transition: 0.4s;
-}
-
-.navbar ul, li {
-  display: flex;
-  margin: 5px;
-  position: relative;
-  font-size: 18px;
-  list-style: none;
-}
-
 a {
   color: whitesmoke;
   font-weight: bold;
 }
 
-/* Main Section */
+/* Botões Dificuldade */
 
-.flip {
-  transition: 1s;
-  transform: rotateY(180deg);
+.header-title{
+  padding: 5px;
+  margin-right: 10%;
+  position: relative;
 }
 
-.main-body {
-  display: flex;
-  justify-content: center;
-  height: auto;
+.intro{
+  text-align: center;
 }
 
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: auto;
-  border-radius: 20px;
-  background-color: var(--content);
+.btn{
+  padding: 15px;
+  margin-left: 10px;
+  background-color: var(--body);
+  border-radius: 10px;
+  color: whitesmoke;
+  font-weight: bold;
 }
+
+/* Header of Main Section */
 
 .header-content {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   width: 100%;
-  height: 120px;
+  height: auto;
   border-radius: 10px 10px 0px 0px;
   background-color: brown;
 }
@@ -145,58 +113,31 @@ a {
   background-color: whitesmoke;
 }
 
-.header-conteudo {
-  padding: 2px;
-  margin: 10px;
-  border-radius: 5px;
-  background-color: var(--body);
+/* Main Section */
+
+.flip {
+  transition: 1s;
+  transform: rotateY(180deg);
 }
 
-.header-conteudo h1{
-  text-align: center;
-  color: whitesmoke;
+.main-body {
+  display: flex;
+  justify-content: center;
+  height: auto;
 }
 
-.main-conteudo{
+.content {
   display: flex;
   flex-wrap: wrap;
-}
-
-.main-conteudo img{
-  margin: 10px;
-  min-width: 100px;
-  max-width: 200px;
-  border-radius: 10px;
-  background: var(--body);
-}
-
-.main-conteudo .texto{
-  margin: 15px;
-  font-weight: bold;
-}
-
-/* Imagens do Card */
-
-.img-poke{
-  height: 190px;
-}
-
-.img-backcard{
-  height: 65px;
-}
-
-.footer-conteudo{
-  display:flex;
   justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+  background-color: var(--content);
 }
 
-.footer-conteudo img{
-  margin: 30px;
-  min-width: 300px;
-  max-width: 700px;
-  max-height: 350px;
-}
-/* tutorial */
+/* Estilo das cartas */
 
 #cardBoard{
   display: flex;
@@ -235,7 +176,6 @@ a {
   transform-style: preserve-3d;
   width: 100%;
   height: 100%;
-  position: absolute;
   padding: 20px;
   border-radius: 12px;
   background: var(--body);
@@ -249,49 +189,8 @@ a {
   transform: translateZ(0px);
 }
 
-/*.cards {
-  width: 200px;
-  height: 300px;
-  margin: 5px;
-  transition: 1s;
-  transform-style: preserve-3d;
-}
-
- .front-cards, .back-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height:100%;
-  width: 100%;
-  border-radius: 10px;
-  position: absolute;
-  transform-style: preserve-3d;
-  background-color: rgb(37, 37, 37);
-}
-
-.front-cards {
-  transform: translateZ(0px);
-}
-
-.back-cards{
-  transform: rotateY(180deg);
-}
-
-.front-cards, .back-cards .header {
-  text-align: center;
-  color: whitesmoke;
-} */
-
-/* Botões Dificuldade */
-
-.dificuldade{
-  margin: 50px;
-}
-
-.btn{
-  padding: 5px;
-  margin-left: 10px;
-  position: relative;
+.img-backcard{
+  height: 65px;
 }
 
 /* Footer Section */
