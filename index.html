@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Memória</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./img/pokebola.png">
+    <link rel="shortcut icon" href="./img/pokemon/pokebola.png">
   </head>
   <body>
      <header class="main-header">
@@ -19,17 +19,28 @@
       <div class="content">
 
         <div class="header-content">
-          <img src="./img/pokebola.png">
+          <img src="img/pokemon/pokebola.png">
 
             <div class="header-title">
-              <p class="intro">Pokécard Memory</p>
-              <input class="btn" type="button" value="Fácil">
-              <input class="btn" type="button" value="Médio">
-              <input class="btn" type="button" value="Difícil">
-            </div>
-          
-            <div class="dificuldade">
-              
+              <p class="intro">Jogo da Memória</p>
+              <div class="cartas-temas">
+                <label for="temas">Temas</label>
+                <select id="temas" onchange="alteraTema()">
+                  <option value="none">Selecionar</option>
+                  <option value="pokemon">Pokémon</option>
+                  <option value="lol">League of Legends</option>
+                  <option value="marveldc">Marvel & DC</option>
+                </select>
+              </div>
+              <div class="jogo-dificuldade">
+                <label for="dificuldade">Dificuldade</label>
+                <select id="dificuldade" onchange="alteraTema()">
+                  <option value="none">Selecionar</option>
+                  <option value="facil">Fácil</option>
+                  <option value="medio">Médio</option>
+                  <option value="dificil">Difícil</option>
+                </select>
+              </div>
             </div>
           
         </div>
@@ -54,7 +65,7 @@
     </main>
 
     <footer class="main-footer">
-      <a href="https://github.com/Dev-Kyle">© Poké<span> Memory</span></a>
+      <p>© Jogo da<span> Memória</span></p>
     </footer>
     
     <script src="main.js"></script>
