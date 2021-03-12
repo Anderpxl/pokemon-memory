@@ -7,14 +7,15 @@ const lol = [
   'aatrox.png','ahri.png','akali.png','alistar.png','amumu.png','anivia.png','annie.png','ashe.png','aurelion-sol.png','azir.png','bard.png','blitzcrank.png','brand.png','braum.png','caitlyn.png','camille.png','cassiopeia.png','chogath.png','corki.png','darius.png','diana.png','draven.png','dr-mundo.png','ekko.png','elise.png','evelynn.png','ezreal.png','fiddlesticks.png','fiora.png','fizz.png','galio.png','gangplank.png','garen.png','gnar.png','gragas.png','graves.png','hecarim.png','heimerdinger.png','illaoi.png','irelia.png','ivern.png','janna.png','jarvan-iv.png','jax.png','jayce.png','jhin.png','jinx.png','kaisa.png'
 ]
 
-const marveldc = [
-  'marveldc.jpg'
+const marvel = [
+  'capita-marvel.png','capitao-america.png','charles.png','coisa.png','deadpool.png','doutor-estranho.png','gamora.png','gaviao-arqueiro.png','groot.png','homem-aranha.png','homem-de-ferro.png','homem-formiga.png','hulk.png','jean-grey.png','logan.png','loki.png','magneto.png','mulher-invisivel.png','nebulosa.png','noturno.png','odin.png','pantera-negra.png','pietro.png','rocket.png','scott.png','senhor-das-estrelas.png','senhor-fantastico.png','shuri.png','tempestade.png','thanos.png','thor.png','tocha-humana.png','vampira.png','venom.png','vespa.png','visao.png','viuva-negra.png','wanda.png'
 ]
 
 /* Fim renderização do HTML */
 
 function alteraTema(){
   let tema = document.getElementById("temas").value
+  let dificuldade = document.getElementById("dificuldade").value
 
   switch(tema){
     case "pokemon":
@@ -23,8 +24,19 @@ function alteraTema(){
     case "lol":
       deck = lol;
       break;
-    case "marveldc":
-      deck = marveldc;
+    case "marvel":
+      deck = marvel;
+      break;
+  }
+  switch(dificuldade){
+    case "facil":
+      dificuldade = 12;
+      break;
+    case "medio":
+      dificuldade = 24;
+      break;
+    case "dificil":
+      dificuldade = 48;
       break;
   }
   aplicaTema()
@@ -56,12 +68,12 @@ function aplicaTema(){
      `
   })
 }else{
-  marveldc.forEach(img => {
+  marvel.forEach(img => {
     cardHTML += `
       <div class="memory-card" data-card="${img}">
-        <img class="front-card" src="img/marveldc/${img}">
+        <img class="front-card" src="img/marvel/${img}">
         <div class="back-card">
-        <img class="img-backcard" src="img/marveldc/marveldc.jpg">
+        <img class="img-backcard" src="img/marvel/marvel.png">
         </div>
       </div>
      `
