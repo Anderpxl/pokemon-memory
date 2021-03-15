@@ -21,7 +21,6 @@ body {
 .navbar {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   align-content: center;
   height: 70px;
@@ -37,7 +36,6 @@ a {
 
 .header-title{
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 5px;
   margin-right: 10%;
@@ -90,6 +88,10 @@ a {
   height: auto;
   border-radius: 10px 10px 0px 0px;
   background-color: brown;
+}
+
+.logo{
+  display: flex;
 }
 
 .header-content img {
